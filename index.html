@@ -14,10 +14,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <!-- Custom styles for this template -->
     <link href="css/project.min.css" rel="stylesheet">
 
@@ -47,7 +47,9 @@
           <nav class="navbar navbar-expand-lg" id="mainNav">
               <div class="container p-0">
                   <div class="col-lg-3">
-                      <a class="navbar-brand js-scroll-trigger" href="#page-top">Estase</a>
+                      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                          <img src="img/logo_estase.png" width="128" alt="">
+                      </a>
                       <a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
                           <i class="fas fa-bars"></i>
                       </a>
@@ -90,9 +92,9 @@
                 <p class="wt-section-subtitle text-white">
                   Строительство, ремонт, внешняя и внутренняя отделка
                 </p>
-                <div>
-                  <a href="#" class="btn wt-btn-white wt-btn-size-md wt-btn-rounded mr-3 mb-3">Оставить заявку</a>
-                  <a href="#" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded mb-3">Подробнее</a>
+                <div class="mt-5">
+                  <a href="#" class="btn wt-btn-primary wt-btn-size-xl mr-3 mb-3">Оставить заявку</a>
+                  <a href="#" class="btn wt-btn-transparent-white wt-btn-size-xl mb-3">Наши работы</a>
                 </div>
               </div>
             </div>
@@ -101,182 +103,420 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="text-center wt-text-primary">
+    <section id="about" class="wt-text-primary">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img src="img/ver2.JPG" class="w-100" alt="">
-          </div>
-          <div class="col-lg-8 offset-lg-2">
-            <h2 class="wt-section-title mb-4 mt-4">
-              About the company
-            </h2>
-            <p class="wt-section-text">
-              The profound expertise of our team, deep understanding of all business aspects, ideal knowledge of processes will help to deal with various issues.
-            </p>
+        <div class="row mb-5">
+          <div class="col-lg-6 align-self-center">
+            <div class="wt-section-title-other mb-4 mt-4">
+              Коротко о нас
+            </div>
             <p class="wt-section-text">
               We create unique and innovative solutions for our customers along with the high-quality support services and personal approach to any case. Feel free to entrust your business to our experts, and you’ll see the difference!
             </p>
-            <div class="wt-block-follow mt-4">
-              <h3 class="wt-section-heading d-inline-block mb-0">
-                  Follow us:
-              </h3>
-              <ul class="d-inline-block list-inline pl-3 mb-0 align-text-bottom">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-              <div class="mt-5">
-                <a href="#" class="btn wt-btn-primary wt-btn-size-md wt-btn-transparent wt-btn-rounded">Request a quote</a>
-              </div>
+            <div>
+              <a href="#" class="btn wt-btn-transparent-blue wt-btn-size-xl mb-3">Подробнее</a>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/about-us.jpeg" class="w-100" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="about_dig">6</span>
+            <span class="about_desc">лет на рынке</span>
+          </div>
+          <div class="col">
+            <span class="about_dig">9000+</span>
+            <span class="about_desc">кв. метров построено</span>
+          </div>
+          <div class="col">
+            <span class="about_dig">200+</span>
+            <span class="about_desc">довольных клиентов</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="text-center wt-text-primary">
+    <section id="services" class="wt-text-primary">
+        <div class="container">
+            <div class="row">
+                <div class="wt-section-title-other text-center mb-5">
+                    Наши услуги
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="img/interior.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ремонт интерьера и экстерьера</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dicta dignissimos et eum id in libero maiores, necessitatibus perspiciatis possimus praesentium quo reiciendis reprehenderit rerum saepe sequi temporibus voluptatum.
+                            </p>
+                            <a href="#" class="btn wt-btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card">
+                        <img src="img/exterior.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Строительство объектов недвижимости</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dicta dignissimos et eum id in libero maiores, necessitatibus perspiciatis possimus praesentium quo reiciendis reprehenderit rerum saepe sequi temporibus voluptatum.
+                            </p>
+                            <a href="#" class="btn wt-btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card">
+                        <img src="img/design.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Дизайн проект</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dicta dignissimos et eum id in libero maiores, necessitatibus perspiciatis possimus praesentium quo reiciendis reprehenderit rerum saepe sequi temporibus voluptatum.
+                            </p>
+                            <a href="#" class="btn wt-btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
       <div class="container">
         <div class="row">
-          <h2 class="wt-section-title mb-5">
-            Services We Provide
-          </h2>
-          <div class="col-lg-4">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
-            </div>
-            <h3 class="wt-section-heading mt-4">
-              Business Consulting
-            </h3>
-            <p class="wt-section-text">
-              Our company can offer you a wide range of business consulting services.
-            </p>
+          <div class="col-12 text-center">
+            <div class="wt-section-title-other mb-5">Наши мастера</div>
           </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
+          <div class="col-lg-6">
+            <div class="team-slider">
+              <div class="item">
+                  <div class="card">
+                      <img src="img/master1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Николай</h5>
+                          <div class="border-top">
+                              <span>строитель</span>
+                              <span>стаж 5 лет</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="card">
+                      <img src="img/master2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Андрей</h5>
+                          <div class="border-top">
+                              <span>строитель</span>
+                              <span>стаж 5 лет</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="card">
+                      <img src="img/master3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Серик</h5>
+                          <div class="border-top">
+                              <span>строитель</span>
+                              <span>стаж 5 лет</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="img/master4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Сергей</h5>
+                            <div class="border-top">
+                                <span>строитель</span>
+                                <span>стаж 5 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3 class="wt-section-heading mt-4">
-              Data Deploy
-            </h3>
-            <p class="wt-section-text">
-              Our team will successfully plan the deployment of your appliance.
-            </p>
           </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
-            </div>
-            <h3 class="wt-section-heading mt-4">
-              Digital Branding
-            </h3>
-            <p class="wt-section-text">
-              Building brand awareness for micro and small businesses.
-            </p>
+          <div class="col-lg-6 align-self-center">
+              <p class="wt-section-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut consectetur cum deserunt dolorem enim labore molestias nobis numquam vel. Atque dolorem explicabo magnam, molestias necessitatibus totam unde? Ad, provident!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur deserunt dignissimos eaque, enim necessitatibus possimus quam veniam? Ad at dolorem expedita ipsa iste labore laudantium molestiae odio recusandae repudiandae?
+              </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="text-center">
-      <div class="container">
-        <div class="row">
-          <h2 class="wt-section-title wt-text-primary mb-5">
-            Gallery
-          </h2>
-          <div class="col-lg-7">
-            <div class="wt-block-gallery-leftImg">
-              <div class="wt-block-background">
-                <div class="wt-background wt-background-galleryImg-l"></div>
-                <div class="wt-background-galleryOverlay">
-                  <h3 class="wt-section-heading text-white mb-0">Quantum CEO & our partners</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
+    <!--<section id="gallery">
+        <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                <div class="wt-block-gallery-rightImg">
-                  <div class="wt-block-background">
-                    <div class="wt-background wt-background-galleryImg-r"></div>
-                    <div class="wt-background-galleryOverlay">
-                      <h3 class="wt-section-heading text-white mb-0">Digital Marketing workshop lecturer</h3>
-                    </div>
-                  </div>
+                <div class="col-12 text-center">
+                    <div class="wt-section-title-other mb-5">Галерея</div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="wt-block-gallery-rightImg">
-                  <div class="wt-block-background">
-                    <div class="wt-background wt-background-galleryImg-r2"></div>
-                    <div class="wt-background-galleryOverlay">
-                      <h3 class="wt-section-heading text-white mb-0">Quantum Company at WebSummit</h3>
+                <div class="col-lg-6">
+                    <div class="gallery-slider">
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/master1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Николай</h5>
+                                    <div class="border-top">
+                                        <span>строитель</span>
+                                        <span>стаж 5 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/master2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Андрей</h5>
+                                    <div class="border-top">
+                                        <span>строитель</span>
+                                        <span>стаж 5 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/master3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Серик</h5>
+                                    <div class="border-top">
+                                        <span>строитель</span>
+                                        <span>стаж 5 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/master4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Сергей</h5>
+                                    <div class="border-top">
+                                        <span>строитель</span>
+                                        <span>стаж 5 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="gallery-slider-nav">
+                        <div class="item">
+                            <img src="img/about-us.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/about-us.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/about-us.jpeg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/about-us.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>-->
+
+    <section id="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="wt-section-title-other mb-5">Как будет проходить ремонт</div>
+                </div>
+                <div class="process-block">
+                    <div class="process-string string-start">
+                        <div class="process-circle">
+                            <div class="circle-outer"></div>
+                        </div>
+                    </div>
+                    <div class="process-string">
+                        <div class="process-text">
+                            <div class="steps-title">Консультация по телефону</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line line-dark"></div>
+                        <div class="process-circle circle-dark"></div>
+                    </div>
+                    <div class="process-string string-right">
+                        <div class="process-text">
+                            <div class="steps-title">Вызов сметчика-технолога на объект</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line"></div>
+                        <div class="process-circle"></div>
+                    </div>
+                    <div class="process-string">
+                        <div class="process-text">
+                            <div class="steps-title">Составление и подписание договора</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line line-dark"></div>
+                        <div class="process-circle circle-dark"></div>
+                    </div>
+                    <div class="process-string string-right">
+                        <div class="process-text">
+                            <div class="steps-title">Заезд на объект</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line"></div>
+                        <div class="process-circle"></div>
+                    </div>
+                    <div class="process-string">
+                        <div class="process-text">
+                            <div class="steps-title">Демонтажные работы</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line line-dark"></div>
+                        <div class="process-circle circle-dark"></div>
+                    </div>
+                    <div class="process-string string-right">
+                        <div class="process-text">
+                            <div class="steps-title">Черновая отделка</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line"></div>
+                        <div class="process-circle"></div>
+                    </div>
+                    <div class="process-string">
+                        <div class="process-text">
+                            <div class="steps-title">Чистовая отделка</div>
+                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        </div>
+                        <div class="process-line line-dark"></div>
+                        <div class="process-circle circle-dark"></div>
+                    </div>
+                    <div class="process-string string-end">
+                        <div class="process-circle">
+                            <div class="circle-outer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="wt-block-background">
+            <div class="wt-background wt-background-workImg"></div>
+            <div class="wt-background wt-background-workOverlay"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="wt-section-title-other mb-5">Рабочий процесс</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="ME9ZEqj7Vm8" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="64IjyLafHRM" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="5HeZulZtvKM" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wt-section-title-other mb-5">Отзывы наших клиентов</div>
+                    <div class="testimonials-slider">
+                        <div class="slider-item">
+                            <div class="item-upper">
+                                <div class="item-img">
+                                    <img src="img/user1.jpg" alt="">
+                                </div>
+                                <div class="item-title">
+                                    <div class="title-name">Андрей Кравцов</div>
+                                    <div class="title-sub">частный предприниматель</div>
+                                    <div class="title-date">14 марта 2018 года</div>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos dolorum necessitatibus odio officiis quas quisquam, ratione voluptates? Aspernatur dicta ea esse eveniet fugiat hic illum impedit laudantium modi nemo non officia porro quasi quisquam ratione saepe similique suscipit, tempore vero, voluptatum. Aliquid eveniet id necessitatibus nulla porro reprehenderit voluptas!
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-upper">
+                                <div class="item-img">
+                                    <img src="img/user2.jpg" alt="">
+                                </div>
+                                <div class="item-title">
+                                    <div class="title-name">Филип Бурунов</div>
+                                    <div class="title-sub">частный предприниматель</div>
+                                    <div class="title-date">14 марта 2018 года</div>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos dolorum necessitatibus odio officiis quas quisquam, ratione voluptates? Aspernatur dicta ea esse eveniet fugiat hic illum impedit laudantium modi nemo non officia porro quasi quisquam ratione saepe similique suscipit, tempore vero, voluptatum. Aliquid eveniet id necessitatibus nulla porro reprehenderit voluptas!
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-upper">
+                                <div class="item-img">
+                                    <img src="img/user1.jpg" alt="">
+                                </div>
+                                <div class="item-title">
+                                    <div class="title-name">Андрей Кравцов</div>
+                                    <div class="title-sub">частный предприниматель</div>
+                                    <div class="title-date">14 марта 2018 года</div>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos dolorum necessitatibus odio officiis quas quisquam, ratione voluptates? Aspernatur dicta ea esse eveniet fugiat hic illum impedit laudantium modi nemo non officia porro quasi quisquam ratione saepe similique suscipit, tempore vero, voluptatum. Aliquid eveniet id necessitatibus nulla porro reprehenderit voluptas!
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-upper">
+                                <div class="item-img">
+                                    <img src="img/user2.jpg" alt="">
+                                </div>
+                                <div class="item-title">
+                                    <div class="title-name">Филип Бурунов</div>
+                                    <div class="title-sub">частный предприниматель</div>
+                                    <div class="title-date">14 марта 2018 года</div>
+                                </div>
+                            </div>
+                            <div class="item-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos dolorum necessitatibus odio officiis quas quisquam, ratione voluptates? Aspernatur dicta ea esse eveniet fugiat hic illum impedit laudantium modi nemo non officia porro quasi quisquam ratione saepe similique suscipit, tempore vero, voluptatum. Aliquid eveniet id necessitatibus nulla porro reprehenderit voluptas!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Helper -->
-    <section id="helper" style="background: #c5d5ee;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 text-center text-lg-left mb-4 mb-lg-0">
-            <h2 class="wt-section-title wt-text-primary">
-              Want to increase profits?
-            </h2>
-            <p class="wt-section-subheading font-weight-normal wt-text-primary">Complete the form below and receive a full analysis of your business within 2 days!</p>
-          </div>
-          <div class="col-lg-4">
-            <form class="wt-form-rounded">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Phone number">
-              </div>
-              <button type="submit" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
-            </form>
-          </div>
-        </div>
+    <section id="callToAction">
+      <div class="wt-block-background">
+        <div class="wt-background wt-background-callToImg"></div>
+        <div class="wt-background wt-background-callToOverlay"></div>
       </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="wt-text-primary">
       <div class="container">
-        <h2 class="wt-section-title text-center mb-5">Contacts</h2>
         <div class="row">
-          <div class="col-lg-9 mb-3">
-            <img src="img/ver6.JPG" class="w-100" alt="">
-          </div>
-          <div class="col-lg-3">
-            <h3 class="wt-section-heading text-center font-weight-normal mb-4">
-              <a href="#">Company Logo</a>
-            </h3>
-            <h3 class="wt-section-heading">Address</h3>
-            <p class="wt-section-text">Head office in London - 36 Regent St.</p>
-            <h3 class="wt-section-heading">Phone</h3>
-            <p class="wt-section-text"><a href="#">+1 (234) 567 8900</a></p>
-            <h3 class="wt-section-heading">E-mail</h3>
-            <p class="wt-section-text"><a href="#">mysite@weblium.com</a></p>
-            <div class="wt-block-follow">
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
+          <div class="col-lg-8 offset-lg-2 text-center text-white">
+            <div class="wt-section-title-other">
+              Свяжитесь с нами, чтобы уточнить детали вашего проекта прямо сейчас!
+            </div>
+            <div class="mt-5">
+              <a href="#" class="btn wt-btn-primary wt-btn-size-xl">Оставить заявку</a>
             </div>
           </div>
         </div>
@@ -415,15 +655,13 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/plugins/jquery.lazy.youtube.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/project.min.js"></script>
 

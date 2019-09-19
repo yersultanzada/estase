@@ -1,45 +1,22 @@
 // Styling for the services section
 section#services {
-  .wt-block-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #a8b7d5;
-    margin: 0 auto;
-    padding: 15px;
-    img {
-      width: 50px;
+  .card {
+    border: none;
+    -webkit-box-shadow: 1px 0 30px rgba(14,136,221,.13);
+    box-shadow: 1px 0 30px rgba(14,136,221,.13);
+    border-radius: 5px;
+    .card-body {
+      .card-title {
+        text-align: center;
+      }
     }
   }
 }
-// Styling for the services1 section
-section#services1 {
-  .wt-block-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #cccccc;
-    margin: 0 auto;
-    padding: 15px;
-    img {
-      width: 50px;
-    }
-  }
-}
-// Styling for the services2 section
-section#services2 {
-  img {
-    width: 70px;
-  }
-  .wt-block-service-light {
-    background-color: $primary-200;
-    padding: 100px 50px;
-  }
-  .wt-block-service-dark {
-    background-color: $primary;
-    padding: 100px 50px;
-    p {
-      color: lighten($primary, 40%);
+
+@media (min-width: 992px) {
+  section#services {
+    .card {
+      min-height: 730px;
     }
   }
 }

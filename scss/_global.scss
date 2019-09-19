@@ -2,7 +2,8 @@
 body {
   overflow-x: hidden;
   color: $primary-200;
-  @include merriweather-font;
+  font-size: 16px;
+  @include body-font;
 }
 body.js-no-scroll {
   height: 100%;
@@ -69,14 +70,13 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include merriweather-font;
 }
 
 section {
   padding: 75px 0;
   h1.wt-section-heroTitle {
     font-size: 90px;
-    line-height: 1.22;
+    line-height: 1;
     font-weight: 400;
     width: 100%;
     -webkit-text-decoration: none;
@@ -85,7 +85,8 @@ section {
     letter-spacing: -.021em;
   }
   h2.wt-section-title {
-    font-size: 34px;
+    position: relative;
+    font-size: 46px;
     line-height: 1.18;
     font-weight: 700;
     width: 100%;
@@ -93,6 +94,28 @@ section {
     text-decoration: none;
     font-style: normal;
     letter-spacing: -.021em;
+  }
+  .wt-section-title-other {
+    position: relative;
+    font-size: 46px;
+    line-height: 1.18;
+    font-weight: 700;
+    width: 100%;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-style: normal;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 2px;
+      background-color: $blue;
+      left: 50%;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: -13px;
+    }
   }
   p.wt-section-subtitle {
     font-size: 20px;
@@ -157,7 +180,8 @@ form.wt-form-rounded {
 .btn {
   font-size: 14px;
   line-height: 1.2;
-  @include merriweather-font;
+  border-radius: 0;
+  border-width: 2px;
 }
 .wt-btn-size-sm {
   font-size: 12px;
@@ -172,14 +196,14 @@ form.wt-form-rounded {
 }
 
 .wt-btn-primary {
-  background-color: $primary-200;
-  border-color: $primary-200;
+  background-color: $blue;
+  border-color: $blue;
   color: white !important;
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($primary-200, 7.5%) !important;
-    border-color: darken($primary-200, 7.5%) !important;
+    background-color: darken($blue, 7.5%) !important;
+    border-color: darken($blue, 7.5%) !important;
     color: white !important;
   }
   &:active,
@@ -206,17 +230,31 @@ form.wt-form-rounded {
 .wt-btn-rounded {
   border-radius: 25px;
 }
-.wt-btn-transparent {
+.wt-btn-transparent-white {
   background-color: transparent;
-  border-color: $primary-200;
+  border-color: white;
+  color: white !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: $blue !important;
+    color: white !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+.wt-btn-transparent-blue {
+  background-color: transparent;
+  border-color: $blue;
   color: $primary-200 !important;
-  border-width: 1px;
   &:active,
   &:focus,
   &:hover {
     background-color: transparent !important;
     border-color: $primary-200 !important;
-    color: $primary-200 !important;
   }
   &:active,
   &:focus {
