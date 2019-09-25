@@ -18,20 +18,28 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="vendor/blueimp-gallery/css/blueimp-gallery.min.css" />
     <!-- Custom styles for this template -->
     <link href="css/project.min.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
-    <div class="mainNav-top p-2 wt-text-primary d-none d-lg-block">
+    <div class="mainNav-top p-2 wt-text-primary">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6">
-                  <a href="#"><i class="fas fa-phone"></i>8 (707) 164-78-58</a>
+              <div class="col-sm-6 mainNav-top-tel text-center text-sm-left mb-3 mb-sm-0">
+                  <a href="tel:+7 (707) 164-78-58"><i class="fas fa-phone"></i>+7 (707) 164-78-58</a>
+                  <a href="tel:+7 (727) 317-43-03"><i class="fas fa-phone"></i>+7 (727) 317-43-03</a>
               </div>
-              <div class="col-lg-6 text-right">
-                  <a href="#"><i class="far fa-envelope"></i>info@estase.kz</a>
+              <div class="col-sm-6 text-center text-sm-right align-self-center">
+                  <div class="wt-block-follow">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      </ul>
+                  </div>
               </div>
           </div>
       </div>
@@ -57,25 +65,25 @@
                   <div class="col-lg-9 collapse navbar-collapse">
                       <ul class="navbar-nav ml-auto">
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#about">Главная</a>
+                              <a class="nav-link js-scroll-trigger" href="/">Главная</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#services">О нас</a>
+                              <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#portfolio">Услуги</a>
+                              <a class="nav-link js-scroll-trigger" href="#services">Услуги</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link js-scroll-trigger" href="#team">Мастера</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#contact">Галерея</a>
+                              <a class="nav-link js-scroll-trigger" href="#gallery">Проекты</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#contact">Отзывы</a>
+                              <a class="nav-link js-scroll-trigger" href="#testimonials">Отзывы</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#contact">Контакты</a>
+                              <a class="nav-link js-scroll-trigger" href="#footer">Контакты</a>
                           </li>
                       </ul>
                   </div>
@@ -158,9 +166,9 @@
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0">
                     <div class="card">
-                        <img src="img/exterior.png" class="card-img-top" alt="...">
+                        <img src="img/design.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Строительство объектов недвижимости</h5>
+                            <h5 class="card-title">Дизайн проект</h5>
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dicta dignissimos et eum id in libero maiores, necessitatibus perspiciatis possimus praesentium quo reiciendis reprehenderit rerum saepe sequi temporibus voluptatum.
                             </p>
@@ -170,9 +178,9 @@
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0">
                     <div class="card">
-                        <img src="img/design.png" class="card-img-top" alt="...">
+                        <img src="img/exterior.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Дизайн проект</h5>
+                            <h5 class="card-title">Строительство объектов недвижимости</h5>
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dicta dignissimos et eum id in libero maiores, necessitatibus perspiciatis possimus praesentium quo reiciendis reprehenderit rerum saepe sequi temporibus voluptatum.
                             </p>
@@ -242,7 +250,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-lg-6 align-self-center">
+          <div class="col-lg-6 align-self-center mt-3 mt-lg-0">
               <p class="wt-section-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut consectetur cum deserunt dolorem enim labore molestias nobis numquam vel. Atque dolorem explicabo magnam, molestias necessitatibus totam unde? Ad, provident!
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur deserunt dignissimos eaque, enim necessitatibus possimus quam veniam? Ad at dolorem expedita ipsa iste labore laudantium molestiae odio recusandae repudiandae?
@@ -252,155 +260,197 @@
       </div>
     </section>
 
-    <!--<section id="gallery">
+    <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="wt-section-title-other mb-5">Галерея</div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="gallery-slider">
-                        <div class="item">
-                            <div class="card">
-                                <img src="img/master1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Николай</h5>
-                                    <div class="border-top">
-                                        <span>строитель</span>
-                                        <span>стаж 5 лет</span>
-                                    </div>
+            </div>
+            <div id="gallery-slider">
+                <div class="slider-item">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="slider-container">
+                                <div class="slider slider-for">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
+                                </div>
+                                <div class="slider slider-nav">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="img/master2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Андрей</h5>
-                                    <div class="border-top">
-                                        <span>строитель</span>
-                                        <span>стаж 5 лет</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="img/master3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Серик</h5>
-                                    <div class="border-top">
-                                        <span>строитель</span>
-                                        <span>стаж 5 лет</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card">
-                                <img src="img/master4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Сергей</h5>
-                                    <div class="border-top">
-                                        <span>строитель</span>
-                                        <span>стаж 5 лет</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-lg-5 col-md-6">
+                            <h4>Квартира в ЖК "AFD Plaza"</h4>
+                            <p>Площадь квартиры: <strong>140 кв.м</strong></p>
+                            <p>Стоимость разработки проекта: <strong>630 000₸</strong></p>
+                            <p>Срок разработки проекта: <strong>14 рабочих дней</strong></p>
+                            <p>Стоимость ремонтных работ: <strong>2 860 000₸</strong></p>
+                            <p>Стоимость черновых материалов: <strong>748 000₸</strong></p>
+                            <p>Стоимость чистовых материалов: <strong>3 150 000₸</strong></p>
+                            <p>Срок выполнения ремонта: <strong>62 рабочих дня</strong></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="gallery-slider-nav">
-                        <div class="item">
-                            <img src="img/about-us.jpeg" alt="">
+                <div class="slider-item">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="slider-container">
+                                <div class="slider slider-for">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
+                                </div>
+                                <div class="slider slider-nav">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <img src="img/about-us.jpeg" alt="">
+                        <div class="col-lg-5 col-md-6">
+                            <h4>Загородный дом в 2 этажа</h4>
+                            <p>Площадь дома: <strong>300 кв.м</strong></p>
+                            <p>Стоимость разработки проекта: <strong>1 050 000₸</strong></p>
+                            <p>Срок разработки проекта: <strong>22 рабочих дня</strong></p>
+                            <p>Стоимость ремонтных работ: <strong>6 500 000₸</strong></p>
+                            <p>Стоимость черновых материалов: <strong>1 800 000₸</strong></p>
+                            <p>Стоимость чистовых материалов: <strong>9 800 000₸</strong></p>
+                            <p>Срок выполнения ремонта: <strong>95 рабочих дней</strong></p>
                         </div>
-                        <div class="item">
-                            <img src="img/about-us.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="slider-container">
+                                <div class="slider slider-for">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
+                                </div>
+                                <div class="slider slider-nav">
+                                    <img src="img/gallery/gal1.jpg" alt="">
+                                    <img src="img/gallery/gal2.jpg" alt="">
+                                    <img src="img/gallery/gal3.jpg" alt="">
+                                    <img src="img/gallery/gal4.jpg" alt="">
+                                    <img src="img/gallery/gal5.jpg" alt="">
+                                    <img src="img/gallery/gal6.jpg" alt="">
+                                    <img src="img/gallery/gal7.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <img src="img/about-us.jpeg" alt="">
+                        <div class="col-lg-5 col-md-6">
+                            <h4>Квартира в ЖК "Алматы Тауэрс"</h4>
+                            <p>Площадь квартиры: <strong>160 кв.м</strong></p>
+                            <p>Стоимость разработки проекта: <strong>640 000₸</strong></p>
+                            <p>Срок разработки проекта: <strong>20 рабочих дней</strong></p>
+                            <p>Стоимость ремонтных работ: <strong>3 360 000₸</strong></p>
+                            <p>Стоимость черновых материалов: <strong>810 000₸</strong></p>
+                            <p>Стоимость чистовых материалов: <strong>3 500 000₸</strong></p>
+                            <p>Срок выполнения ремонта: <strong>60 рабочих дней</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <section id="process">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <div class="wt-section-title-other mb-5">Как будет проходить ремонт</div>
-                </div>
-                <div class="process-block">
-                    <div class="process-string string-start">
-                        <div class="process-circle">
-                            <div class="circle-outer"></div>
+                <div class="col-12">
+                    <div class="wt-section-title-other text-center mb-5">Как будет проходить ремонт</div>
+                    <div class="process-block">
+                        <div class="process-string string-start">
+                            <div class="process-circle">
+                                <div class="circle-outer"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="process-string">
-                        <div class="process-text">
-                            <div class="steps-title">Консультация по телефону</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string">
+                            <div class="process-text">
+                                <div class="steps-title">Консультация по телефону</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line line-dark"></div>
+                            <div class="process-circle circle-dark"></div>
                         </div>
-                        <div class="process-line line-dark"></div>
-                        <div class="process-circle circle-dark"></div>
-                    </div>
-                    <div class="process-string string-right">
-                        <div class="process-text">
-                            <div class="steps-title">Вызов сметчика-технолога на объект</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string string-right">
+                            <div class="process-text">
+                                <div class="steps-title">Вызов сметчика-технолога на объект</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line"></div>
+                            <div class="process-circle"></div>
                         </div>
-                        <div class="process-line"></div>
-                        <div class="process-circle"></div>
-                    </div>
-                    <div class="process-string">
-                        <div class="process-text">
-                            <div class="steps-title">Составление и подписание договора</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string">
+                            <div class="process-text">
+                                <div class="steps-title">Составление и подписание договора</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line line-dark"></div>
+                            <div class="process-circle circle-dark"></div>
                         </div>
-                        <div class="process-line line-dark"></div>
-                        <div class="process-circle circle-dark"></div>
-                    </div>
-                    <div class="process-string string-right">
-                        <div class="process-text">
-                            <div class="steps-title">Заезд на объект</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string string-right">
+                            <div class="process-text">
+                                <div class="steps-title">Заезд на объект</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line"></div>
+                            <div class="process-circle"></div>
                         </div>
-                        <div class="process-line"></div>
-                        <div class="process-circle"></div>
-                    </div>
-                    <div class="process-string">
-                        <div class="process-text">
-                            <div class="steps-title">Демонтажные работы</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string">
+                            <div class="process-text">
+                                <div class="steps-title">Демонтажные работы</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line line-dark"></div>
+                            <div class="process-circle circle-dark"></div>
                         </div>
-                        <div class="process-line line-dark"></div>
-                        <div class="process-circle circle-dark"></div>
-                    </div>
-                    <div class="process-string string-right">
-                        <div class="process-text">
-                            <div class="steps-title">Черновая отделка</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string string-right">
+                            <div class="process-text">
+                                <div class="steps-title">Черновая отделка</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line"></div>
+                            <div class="process-circle"></div>
                         </div>
-                        <div class="process-line"></div>
-                        <div class="process-circle"></div>
-                    </div>
-                    <div class="process-string">
-                        <div class="process-text">
-                            <div class="steps-title">Чистовая отделка</div>
-                            <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                        <div class="process-string">
+                            <div class="process-text">
+                                <div class="steps-title">Чистовая отделка</div>
+                                <div class="steps-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore!</div>
+                            </div>
+                            <div class="process-line line-dark"></div>
+                            <div class="process-circle circle-dark"></div>
                         </div>
-                        <div class="process-line line-dark"></div>
-                        <div class="process-circle circle-dark"></div>
-                    </div>
-                    <div class="process-string string-end">
-                        <div class="process-circle">
-                            <div class="circle-outer"></div>
+                        <div class="process-string string-end">
+                            <div class="process-circle">
+                                <div class="circle-outer"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -503,6 +553,29 @@
         </div>
     </section>
 
+    <section id="testimonials-video">
+        <div class="wt-block-background">
+            <div class="wt-background wt-background-testimonialsImg"></div>
+            <div class="wt-background wt-background-testimonialsOverlay"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="wt-section-title-other mb-5">Видео отзывы</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="ME9ZEqj7Vm8" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="64IjyLafHRM" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <iframe data-loader="youtube" data-src="5HeZulZtvKM" width="100%" height="210" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Helper -->
     <section id="callToAction">
       <div class="wt-block-background">
@@ -516,86 +589,108 @@
               Свяжитесь с нами, чтобы уточнить детали вашего проекта прямо сейчас!
             </div>
             <div class="mt-5">
-              <a href="#" class="btn wt-btn-primary wt-btn-size-xl">Оставить заявку</a>
+                <form id="contactForm" action="handler.php" method="post">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Ваше имя" name="name" minlength="2" maxlength="30" required>
+                        </div>
+                        <div class="col">
+                            <input type="tel" class="form-control phone" placeholder="Ваш телефон" name="phone" required>
+                        </div>
+                        <div class="col">
+                            <button type="submit" id="button" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100"><i class="fas fa-phone"></i>Заказать звонок</button>
+                            <div class="result">
+                                <span id="answer"></span>
+                                <span id="loader" style="display: none"><img src="img/loader.gif" alt="Загрузка подождите"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="license">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wt-section-title-other text-center mb-5">Лицензия на строительные работы</div>
+                    <div id="links">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <a href="img/certificate.jpg" title="">
+                                    <img data-src="img/certificate.jpg" class="w-100" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" style="padding: 0">
+        <img data-src="img/estase-map.jpg" class="w-100" alt="">
+    </section>
+
     <!-- Footer -->
     <section id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <p class="wt-section-subheading text-white">
-              Quantum Company
-            </p>
-            <p class="wt-section-text">
-              Our company will go the extra mile to analyze the particular project in detail, and offer a business solution that will meet your requirements.
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center text-md-left mb-3 mb-md-0">
-            <ul class="row nav">
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Testimonials</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Projects</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Blog</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Services</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Resources</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Development</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-2 text-center text-md-left mb-3 mb-md-0">
-            <div class="wt-block-follow">
-              <p class="wt-section-text">
-                Follow us:
-              </p>
-              <ul class="list-inline mb-0 align-text-bottom">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info text-center">
+                            <i class="far fa-envelope"></i>
+                            <p class="wt-section-text">E-mail</p>
+                            <p class="wt-section-small-text">
+                                <a href="mailto:info@estase.kz"><em>info@estase.kz</em></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-info text-center">
+                            <i class="fas fa-home"></i>
+                            <p class="wt-section-text">Адрес</p>
+                            <p class="wt-section-small-text"><em>Жибек жолы 64<br>уг.Валиханова, офис 804</em></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-info text-center">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p class="wt-section-text">Телефон</p>
+                            <p class="wt-section-small-text">
+                                <a href="tel:+7 (707) 164-78-58"><em>+7 (707) 164-78-58</em></a><br>
+                                <a href="tel:+7 (727) 317-43-03"><em>+7 (727) 317-43-03</em></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <p class="wt-section-text">
-              Subscribe to get the latest news from us
-            </p>
-            <form class="wt-form-rounded">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email *">
-              </div>
-              <button type="submit" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
-            </form>
-          </div>
-        </div>
-        <div class="row mt-3 wt-border-top">
-          <div class="col-md-6">
-            <p class="wt-section-small-text">Created by WT Studio</p>
-          </div>
-          <div class="col-md-6 text-right">
-            <p class="wt-section-small-text">All rights Reserved</p>
-          </div>
         </div>
       </div>
+    </section>
+
+    <section id="footer-bottom" class="border-top" style="padding: 30px 0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <p class="wt-section-small-text mb-0 font-weight-bold">Разработка и продвижение - <a href="https://web-tech.kz/" target="_blank">WT Studio</a></p>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <div class="wt-block-follow">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="wt-section-small-text mb-0 font-weight-bold"><em>© Estase.kz - Все права защищены, 2019</em></p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- menuModal-->
@@ -609,52 +704,51 @@
           </div>
           <div class="modal-body">
             <div class="col-12 text-left">
-              <a class="menu_logo">Quantum Company</a>
+              <a class="menu_logo">
+                  <img src="img/logo_estase.png" width="128" alt="">
+              </a>
             </div>
             <div class="col-12 mt-4">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">About us</a>
+                  <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                  <a class="nav-link js-scroll-trigger" href="#services">Услуги</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+                  <a class="nav-link js-scroll-trigger" href="#gallery">Проекты</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#team">Testimonials</a>
+                  <a class="nav-link js-scroll-trigger" href="#testimonials">Отзывы</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
+                  <a class="nav-link js-scroll-trigger" href="#footer">Контакты</a>
                 </li>
               </ul>
             </div>
-            <div class="col-12 mt-4 mainNav5-top">
-              <div>
-                  <span><i class="far fa-clock"></i>Open 8 am - 8 pm</span>
-              </div>
-              <div>
-                  <a href="#"><i class="fas fa-phone"></i>+1 (234) 567-8900</a>
-              </div>
-              <div>
-                  <span><i class="fas fa-map-marker-alt"></i>36 Regent Street, London</span>
-              </div>
-              <div>
-                  <a href="#"><i class="far fa-envelope"></i>mysite@email.com</a>
-              </div>
-            </div>
             <div class="modal_helper"></div>
             <div class="request_btn">
-              <a class="btn wt-btn-primary wt-btn-size-sm wt-btn-rounded" href="#">Request a quote</a>
+              <a class="btn wt-btn-primary wt-btn-size-sm" href="#">Оставить заявку</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Blueimp gallery -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls text-white">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -662,9 +756,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/plugins/jquery.lazy.youtube.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="vendor/blueimp-gallery/js/blueimp-gallery.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/project.min.js"></script>
-
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
   </body>
 
 </html>

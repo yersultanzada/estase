@@ -8,3 +8,14 @@
     background: rgba(255, 255, 255, 0.56);
   }
 }
+#testimonials-video {
+  position: relative;
+  .wt-background-testimonialsImg {
+    background: url(../img/testimonials-video-bg.jpg) no-repeat 50% 50% / cover;
+    filter: blur(5px);
+  }
+  .wt-background-testimonialsOverlay {
+    background: rgba(255, 255, 255, 0.56);
+  }
+}
+

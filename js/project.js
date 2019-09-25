@@ -50,50 +50,67 @@
         prevArrow:'<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow:'<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
 
-        //         responsive: [
-        //             {
-        //               breakpoint: 576,
-        //               settings: {
-        //                 centerMode: false,
-        //                 variableWidth: false,
-        //               }
-        //             },
-        //         ]
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    variableWidth: false,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    variableWidth: false,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
     });
 
-    $('.gallery-slider').slick({
-        slidesToShow: 3,
+    $('#gallery-slider').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        dots: false,
-        centerMode: true,
-        verticalSwiping: true,
-        variableWidth: true,
+        fade: true,
+        dots: true,
         infinite: true,
-        focusOnSelect: true,
-        cssEase: 'linear',
-        touchMove: true,
-        asNavFor: '.gallery-slider-nav',
         prevArrow:'<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow:'<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-
-        //         responsive: [
-        //             {
-        //               breakpoint: 576,
-        //               settings: {
-        //                 centerMode: false,
-        //                 variableWidth: false,
-        //               }
-        //             },
-        //         ]
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
-    $('.gallery-slider-nav').slick({
-        slidesToShow: 4,
+    $('.slider-container').find('.slider-for').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.gallery-slider',
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-container .slider-nav'
+    });
+
+    $('.slider-container').find('.slider-nav').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-container .slider-for',
         dots: false,
         centerMode: true,
+        arrows: false,
         focusOnSelect: true
     });
 
@@ -103,7 +120,59 @@
         slidesToScroll: 1,
         dots: true,
         prevArrow:'<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow:'<button class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+        nextArrow:'<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+    $('.phone').mask('+7 (999) 999-99-99');
+
+    $('#contactForm').on('submit', function(event) {
+
+        event.preventDefault();
+
+        var form = $('#contactForm'),
+            button = $('#button'),
+            answer = $('#answer'),
+            loader = $('#loader');
+
+        $.ajax({
+            url: 'handler.php',
+            type: 'POST',
+            data: form.serialize(),
+            beforeSend: function() {
+                answer.empty();
+                button.attr('disabled', true);
+                loader.fadeIn();
+            },
+            success: function(result) {
+                loader.fadeOut(300, function() {
+                    answer.text(result);
+                });
+                form.find('.form-control').val('');
+                button.attr('disabled', false);
+            },
+            error: function() {
+                loader.fadeOut(300, function() {
+                    answer.text('Произошла ошибка!');
+                });
+                button.attr('disabled', false);
+            }
+        });
+
     });
 
 })(jQuery); // End of use strict

@@ -7,4 +7,42 @@
   .wt-background-callToOverlay {
     background: rgba(0, 0, 0, 0.75);
   }
+  form#contactForm {
+    .form-row {
+      display: block;
+      .form-control {
+        border-radius: 25px;
+        padding: 12px 24px;
+        height: 43px;
+        margin-bottom: 10px;
+      }
+      button {
+        min-width: 217px;
+        i {
+          margin-right: 10px;
+        }
+      }
+      .result {
+        position: absolute;
+        left: 15px;
+        #answer {
+          font-size: 14px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #callToAction {
+    form#contactForm {
+      .form-row {
+        display: flex;
+        .form-control {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }

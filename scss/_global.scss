@@ -17,9 +17,9 @@ p {
 }
 
 a {
-  color: $gray-900;
+  color: $primary-200;
   &:hover {
-    color: lighten($gray-900, 10%);
+    color: lighten($primary-200, 10%);
   }
 }
 
@@ -45,18 +45,14 @@ a {
 }
 .wt-block-follow {
   ul {
+    margin-bottom: 0;
     li {
       text-align: center;
       a{
         display: block;
-        background-color: $primary-200;
-        border-radius: 4px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        color: #fff;
-        &:hover {
-          background-color: lighten($primary-200, 10%);
+        color: $primary-200;
+        i {
+          font-size: 1.5rem;
         }
       }
     }
@@ -157,7 +153,7 @@ section {
     letter-spacing: 0;
   }
   p.wt-section-small-text {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.67;
     width: 100%;
   }
@@ -290,6 +286,9 @@ img::-moz-selection {
     font-size: 40px;
   }
   section h2.wt-section-title {
+    font-size: 26px;
+  }
+  section .wt-section-title-other {
     font-size: 26px;
   }
   section h3.wt-section-heading {
