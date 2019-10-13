@@ -36,6 +36,8 @@
 
     $("iframe[data-src]").Lazy();
 
+    $('[data-toggle="popover"]').popover();
+
     $('.team-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -148,6 +150,41 @@
             button = $('#button'),
             answer = $('#answer'),
             loader = $('#loader');
+
+        $.ajax({
+            url: 'handler.php',
+            type: 'POST',
+            data: form.serialize(),
+            beforeSend: function() {
+                answer.empty();
+                button.attr('disabled', true);
+                loader.fadeIn();
+            },
+            success: function(result) {
+                loader.fadeOut(300, function() {
+                    answer.text(result);
+                });
+                form.find('.form-control').val('');
+                button.attr('disabled', false);
+            },
+            error: function() {
+                loader.fadeOut(300, function() {
+                    answer.text('Произошла ошибка!');
+                });
+                button.attr('disabled', false);
+            }
+        });
+
+    });
+
+    $('#contactForm_popup').on('submit', function(event) {
+
+        event.preventDefault();
+
+        var form = $('#contactForm_popup'),
+            button = $('#button_popup'),
+            answer = $('#answer_popup'),
+            loader = $('#loader_popup');
 
         $.ajax({
             url: 'handler.php',

@@ -75,10 +75,13 @@
         img {
           display: block !important;
           width: 130px;
+          height: 130px;
           border-radius: 50%;
           align-self: center;
           margin-top: 50px;
           margin-bottom: 30px;
+          border: 2px solid $yellow;
+          padding: 5px;
         }
         .card-title {
           text-align: center;
@@ -103,6 +106,7 @@
       .card {
         img {
           width: 170px !important;
+          height: 170px !important;
         }
       }
     }

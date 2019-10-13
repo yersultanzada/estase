@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 section {
@@ -141,10 +141,10 @@ section p.wt-section-subtitle {
   letter-spacing: 0;
 }
 
-section h3.wt-section-heading {
+section p.wt-section-heading {
   font-size: 26px;
   line-height: 1.31;
-  font-weight: 700;
+  font-weight: 400;
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -519,18 +519,6 @@ section#masthead .wt-block-intro {
   padding-bottom: 50px;
 }
 
-section#masthead .wt-block-intro .wt-intro-form {
-  background-color: #fff;
-  padding: 40px 100px 50px;
-  border-radius: 4px;
-}
-
-@media (max-width: 575px) {
-  section#masthead .wt-block-intro .wt-intro-form {
-    padding: 40px 25px 50px;
-  }
-}
-
 @media (max-width: 767px) {
   section#masthead .wt-section-heroTitle {
     font-size: 40px;
@@ -542,108 +530,17 @@ section#masthead .wt-block-intro .wt-intro-form {
     padding-top: 150px;
     padding-bottom: 170px;
   }
-}
-
-section#masthead1 {
-  position: relative;
-}
-
-section#masthead1 .wt-background-headerImg {
-  background: #CCCCCC;
-}
-
-section#masthead1 .wt-block-intro {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-section#masthead1 .wt-block-intro .wt-intro-form {
-  background-color: #fff;
-  padding: 40px 100px 50px;
-  border-radius: 4px;
-}
-
-@media (max-width: 575px) {
-  section#masthead1 .wt-block-intro .wt-intro-form {
-    padding: 40px 25px 50px;
+  section#masthead .wt-block-intro h1.wt-section-heroTitle {
+    max-width: 1050px;
   }
 }
 
-@media (max-width: 767px) {
-  section#masthead1 .wt-section-heroTitle {
-    font-size: 40px;
-  }
+.popover .popover-header {
+  border-bottom: none;
 }
 
-@media (min-width: 992px) {
-  section#masthead1 .wt-block-intro {
-    padding-top: 150px;
-    padding-bottom: 170px;
-  }
-}
-
-section#masthead2 {
-  position: relative;
-}
-
-section#masthead2 .wt-background-headerImg {
-  background: #676767;
-}
-
-section#masthead2 .wt-block-intro {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-section#masthead2 .wt-block-intro .wt-intro-form {
-  background-color: #fff;
-  padding: 40px 100px 50px;
-  border-radius: 4px;
-}
-
-@media (min-width: 992px) {
-  section#masthead2 .wt-block-intro {
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-}
-
-@media (max-width: 767px) {
-  section#masthead2 .wt-section-heroTitle {
-    font-size: 40px;
-  }
-}
-
-section#masthead3 {
-  position: relative;
-}
-
-section#masthead3 .wt-background-headerImg {
-  background: #ebebeb;
-}
-
-section#masthead3 .wt-block-intro {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-section#masthead3 .wt-block-intro .wt-intro-form {
-  background-color: #fff;
-  padding: 40px 100px 50px;
-  border-radius: 4px;
-}
-
-@media (min-width: 992px) {
-  section#masthead3 .wt-block-intro {
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-}
-
-@media (max-width: 767px) {
-  section#masthead3 .wt-section-heroTitle {
-    font-size: 40px;
-  }
+.popover .popover-body {
+  display: none;
 }
 
 section#services .card {
@@ -653,8 +550,231 @@ section#services .card {
   border-radius: 5px;
 }
 
+section#services .card .dotted_pic_interior, section#services .card .dotted_pic_design, section#services .card .dotted_pic_exterior {
+  position: relative;
+}
+
+section#services .card .dotted_pic_interior ._dot button, section#services .card .dotted_pic_design ._dot button, section#services .card .dotted_pic_exterior ._dot button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+section#services .card .dotted_pic_interior ._dot button:hover, section#services .card .dotted_pic_design ._dot button:hover, section#services .card .dotted_pic_exterior ._dot button:hover {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(249, 185, 30, 0.7);
+  box-shadow: 0 0 0 0.2rem rgba(249, 185, 30, 0.7);
+}
+
+section#services .card .dotted_pic_interior ._dot button span, section#services .card .dotted_pic_design ._dot button span, section#services .card .dotted_pic_exterior ._dot button span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #f9b91e;
+  border-radius: 50%;
+}
+
+section#services .card .dotted_pic_interior .dot_1 {
+  position: absolute;
+  left: 80px;
+  bottom: 70px;
+}
+
+section#services .card .dotted_pic_interior .dot_2 {
+  position: absolute;
+  left: 180px;
+  bottom: 90px;
+}
+
+section#services .card .dotted_pic_interior .dot_3 {
+  position: absolute;
+  left: 140px;
+  bottom: 120px;
+}
+
+section#services .card .dotted_pic_interior .dot_4 {
+  position: absolute;
+  left: 90px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_interior .dot_5 {
+  position: absolute;
+  right: 130px;
+  bottom: 170px;
+}
+
+section#services .card .dotted_pic_interior .dot_6 {
+  position: absolute;
+  right: 70px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_interior .dot_7 {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+section#services .card .dotted_pic_interior .dot_8 {
+  position: absolute;
+  left: 80px;
+  top: 120px;
+}
+
+section#services .card .dotted_pic_interior .dot_9 {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+}
+
+section#services .card .dotted_pic_interior .dot_10 {
+  position: absolute;
+  right: 150px;
+  top: 130px;
+}
+
+section#services .card .dotted_pic_interior .dot_11 {
+  position: absolute;
+  right: 90px;
+  top: 70px;
+}
+
+section#services .card .dotted_pic_design .dot_1 {
+  position: absolute;
+  right: 110px;
+  bottom: 50px;
+}
+
+section#services .card .dotted_pic_design .dot_2 {
+  position: absolute;
+  left: 180px;
+  bottom: 90px;
+}
+
+section#services .card .dotted_pic_design .dot_3 {
+  position: absolute;
+  left: 140px;
+  bottom: 120px;
+}
+
+section#services .card .dotted_pic_design .dot_4 {
+  position: absolute;
+  left: 90px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_design .dot_5 {
+  position: absolute;
+  right: 130px;
+  bottom: 170px;
+}
+
+section#services .card .dotted_pic_design .dot_6 {
+  position: absolute;
+  right: 70px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_design .dot_7 {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+section#services .card .dotted_pic_design .dot_8 {
+  position: absolute;
+  left: 80px;
+  top: 120px;
+}
+
+section#services .card .dotted_pic_design .dot_9 {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+}
+
+section#services .card .dotted_pic_design .dot_10 {
+  position: absolute;
+  right: 150px;
+  top: 130px;
+}
+
+section#services .card .dotted_pic_design .dot_11 {
+  position: absolute;
+  right: 90px;
+  top: 70px;
+}
+
+section#services .card .dotted_pic_exterior .dot_1 {
+  position: absolute;
+  left: 80px;
+  bottom: 70px;
+}
+
+section#services .card .dotted_pic_exterior .dot_2 {
+  position: absolute;
+  left: 180px;
+  bottom: 90px;
+}
+
+section#services .card .dotted_pic_exterior .dot_3 {
+  position: absolute;
+  left: 140px;
+  bottom: 120px;
+}
+
+section#services .card .dotted_pic_exterior .dot_4 {
+  position: absolute;
+  left: 90px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_exterior .dot_5 {
+  position: absolute;
+  right: 130px;
+  bottom: 170px;
+}
+
+section#services .card .dotted_pic_exterior .dot_6 {
+  position: absolute;
+  right: 70px;
+  bottom: 150px;
+}
+
+section#services .card .dotted_pic_exterior .dot_7 {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+section#services .card .dotted_pic_exterior .dot_8 {
+  position: absolute;
+  left: 80px;
+  top: 120px;
+}
+
+section#services .card .dotted_pic_exterior .dot_9 {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+}
+
+section#services .card .dotted_pic_exterior .dot_10 {
+  position: absolute;
+  right: 150px;
+  top: 130px;
+}
+
+section#services .card .dotted_pic_exterior .dot_11 {
+  position: absolute;
+  right: 90px;
+  top: 70px;
+}
+
 section#services .card .card-body .card-title {
   text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -761,11 +881,14 @@ section#services .card .card-body .card-title {
 #team .team-slider .item.slick-slide .card img {
   display: block !important;
   width: 130px;
+  height: 130px;
   border-radius: 50%;
   -ms-flex-item-align: center;
   align-self: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  border: 2px solid #f9b91e;
+  padding: 5px;
 }
 
 #team .team-slider .item.slick-slide .card .card-title {
@@ -787,6 +910,7 @@ section#services .card .card-body .card-title {
   }
   #team .item.slick-slide .card img {
     width: 170px !important;
+    height: 170px !important;
   }
   #team .team-slider.slick-slider {
     position: static;
@@ -992,6 +1116,35 @@ section#services .card .card-body .card-title {
 }
 
 #callToAction form#contactForm .form-row .result #answer {
+  font-size: 14px;
+  color: white;
+}
+
+#modalCenter form#contactForm_popup .form {
+  margin: 20px 0;
+}
+
+#modalCenter form#contactForm_popup .form .form-control {
+  border-radius: 25px;
+  padding: 12px 24px;
+  height: 43px;
+  margin-bottom: 10px;
+}
+
+#modalCenter form#contactForm_popup .form button {
+  min-width: 217px;
+}
+
+#modalCenter form#contactForm_popup .form button i {
+  margin-right: 10px;
+}
+
+#modalCenter form#contactForm_popup .form .result {
+  position: absolute;
+  left: 15px;
+}
+
+#modalCenter form#contactForm_popup .form .result #answer_popup {
   font-size: 14px;
   color: white;
 }
@@ -1250,23 +1403,6 @@ section#about .col span.about_desc {
   #testimonials .testimonials-slider.slick-slider .slick-next {
     right: 5px;
   }
-}
-
-#contact2 .wt-block-contactsBg {
-  background-color: #676767;
-}
-
-#contact2 .wt-block-contactsCenter {
-  background-color: #fff;
-  padding: 50px;
-  max-width: 450px;
-  margin: 70px auto;
-}
-
-#contact2 img {
-  min-height: 552px;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 #map img {
