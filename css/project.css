@@ -777,9 +777,345 @@ section#services .card .card-body .card-title {
   font-weight: bold;
 }
 
-@media (min-width: 992px) {
-  section#services .card {
-    min-height: 730px;
+@media (min-width: 1200px) {
+  section#services .card .dotted_pic_interior .dot_1 {
+    position: absolute;
+    left: 80px;
+    bottom: 70px;
+  }
+  section#services .card .dotted_pic_interior .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_interior .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_interior .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_interior .dot_5 {
+    position: absolute;
+    right: 130px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_interior .dot_6 {
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_interior .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_interior .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_interior .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+  }
+  section#services .card .dotted_pic_interior .dot_10 {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_interior .dot_11 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+  }
+  section#services .card .dotted_pic_design .dot_1 {
+    position: absolute;
+    right: 110px;
+    bottom: 50px;
+  }
+  section#services .card .dotted_pic_design .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_design .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_design .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_5 {
+    position: absolute;
+    right: 130px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_design .dot_6 {
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_design .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_design .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_10 {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_design .dot_11 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+  }
+  section#services .card .dotted_pic_exterior .dot_1 {
+    position: absolute;
+    left: 80px;
+    bottom: 70px;
+  }
+  section#services .card .dotted_pic_exterior .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_exterior .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_exterior .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_5 {
+    position: absolute;
+    right: 130px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_exterior .dot_6 {
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_exterior .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_exterior .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_10 {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_exterior .dot_11 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+  }
+  section#services .card .card-body {
+    min-height: 377px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  section#services .card .dotted_pic_interior .dot_1 {
+    position: absolute;
+    left: 80px;
+    bottom: 70px;
+  }
+  section#services .card .dotted_pic_interior .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_interior .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_interior .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_interior .dot_5 {
+    position: absolute;
+    right: 90px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_interior .dot_6 {
+    position: absolute;
+    right: 60px;
+    bottom: 130px;
+  }
+  section#services .card .dotted_pic_interior .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_interior .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_interior .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_interior .dot_10 {
+    position: absolute;
+    right: 130px;
+    top: 110px;
+  }
+  section#services .card .dotted_pic_interior .dot_11 {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+  }
+  section#services .card .dotted_pic_design .dot_1 {
+    position: absolute;
+    right: 110px;
+    bottom: 50px;
+  }
+  section#services .card .dotted_pic_design .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_design .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_design .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_5 {
+    position: absolute;
+    right: 130px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_design .dot_6 {
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_design .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_design .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+  }
+  section#services .card .dotted_pic_design .dot_10 {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_design .dot_11 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+  }
+  section#services .card .dotted_pic_exterior .dot_1 {
+    position: absolute;
+    left: 80px;
+    bottom: 70px;
+  }
+  section#services .card .dotted_pic_exterior .dot_2 {
+    position: absolute;
+    left: 180px;
+    bottom: 90px;
+  }
+  section#services .card .dotted_pic_exterior .dot_3 {
+    position: absolute;
+    left: 140px;
+    bottom: 120px;
+  }
+  section#services .card .dotted_pic_exterior .dot_4 {
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_5 {
+    position: absolute;
+    right: 130px;
+    bottom: 170px;
+  }
+  section#services .card .dotted_pic_exterior .dot_6 {
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_7 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  section#services .card .dotted_pic_exterior .dot_8 {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+  }
+  section#services .card .dotted_pic_exterior .dot_9 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+  }
+  section#services .card .dotted_pic_exterior .dot_10 {
+    position: absolute;
+    right: 150px;
+    top: 130px;
+  }
+  section#services .card .dotted_pic_exterior .dot_11 {
+    position: absolute;
+    right: 90px;
+    top: 70px;
+  }
+  section#services .card .card-body {
+    min-height: 485px;
   }
 }
 
