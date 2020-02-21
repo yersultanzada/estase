@@ -22,6 +22,9 @@ a {
     color: lighten($primary-200, 10%);
   }
 }
+._preloader {
+  display: none;
+}
 
 .wt-text-primary {
   color: $primary-200 !important;

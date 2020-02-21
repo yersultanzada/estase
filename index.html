@@ -935,22 +935,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               Свяжитесь с нами, чтобы уточнить детали вашего проекта прямо сейчас!
             </div>
             <div class="mt-5">
-                <form id="contactForm" action="handler.php" method="post">
+                <form class="contact-form" id="contactForm" method="POST">
                     <div class="form-row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Ваше имя" name="name" minlength="2" maxlength="30" required>
+                            <input type="text" class="form-control contact-form__input contact-form__input_name" placeholder="Ваше имя *" name="name" minlength="2" maxlength="30" required="required">
                         </div>
                         <div class="col">
-                            <input type="tel" class="form-control phone" placeholder="Ваш телефон" name="phone" required>
+                            <input type="tel" class="form-control contact-form__input contact-form__input_tel" placeholder="Ваш телефон *" name="tel" required="required">
                         </div>
                         <div class="col">
-                            <button type="submit" id="button" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100"><i class="fas fa-phone"></i>Заказать звонок</button>
-                            <div class="result">
-                                <span id="answer"></span>
-                                <span id="loader" style="display: none"><img src="img/loader.gif" alt="Загрузка подождите"></span>
-                            </div>
+                            <button type="submit" id="button" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100 contact-form__button">
+                                <i class="fas fa-phone"></i>
+                                <span class="_preloader">
+                                    <i class="fas fa-spinner fa-spin fa-fw"></i>
+                                    <span class="sr-only">Loading...</span>
+                                </span>
+                                Заказать звонок
+                            </button>
                         </div>
                     </div>
+                    <p class="contact-form__description text-center mt-3"></p>
                 </form>
             </div>
           </div>
@@ -1094,22 +1098,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="contactForm_popup" action="handler.php" method="post">
+                    <form class="contact-form" id="contactForm_popup" method="POST">
                         <div class="form">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Ваше имя" name="name" minlength="2" maxlength="30" required>
+                                <input type="text" class="form-control contact-form__input contact-form__input_name" placeholder="Ваше имя *" name="name" minlength="2" maxlength="30" required="required">
                             </div>
                             <div class="col">
-                                <input type="tel" class="form-control phone" placeholder="Ваш телефон" name="phone" required>
+                                <input type="tel" class="form-control contact-form__input contact-form__input_tel2" placeholder="Ваш телефон *" name="tel" required="required">
                             </div>
                             <div class="col">
-                                <button type="submit" id="button_popup" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100"><i class="fas fa-phone"></i>Заказать звонок</button>
-                                <div class="result">
-                                    <span id="answer_popup"></span>
-                                    <span id="loader_popup" style="display: none"><img src="img/loader.gif" alt="Загрузка подождите"></span>
-                                </div>
+                                <button type="submit" class="btn wt-btn-primary wt-btn-size-md wt-btn-rounded w-100 contact-form__button">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="_preloader">
+                                        <i class="fas fa-spinner fa-spin fa-fw"></i>
+                                        <span class="sr-only">Loading...</span>
+                                    </span>
+                                    Заказать звонок
+                                </button>
                             </div>
                         </div>
+                        <p class="contact-form__description text-center mt-3 wt-text-primary"></p>
                     </form>
                 </div>
             </div>
@@ -1136,10 +1144,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/plugins/jquery.lazy.youtube.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="vendor/blueimp-gallery/js/blueimp-gallery.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/project.min.js"></script>
+    <script src="mail/js/mail.js"></script>
     <script>
         document.getElementById('links').onclick = function (event) {
             event = event || window.event;
@@ -1149,6 +1158,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 links = this.getElementsByTagName('a');
             blueimp.Gallery(links, options);
         };
+        $(function() {
+            $('.contact-form__input_tel').mask('+7(000)000-00-00');
+            $('.contact-form__input_tel2').mask('+7(000)000-00-00');
+        });
     </script>
   </body>
 
