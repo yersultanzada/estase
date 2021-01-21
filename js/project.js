@@ -139,4 +139,11 @@
             }
         ]
     });
+    $('#contactForm').submit(function () {
+        yaCounter56138671.reachGoal('form-feedback');
+    });
+
+    $('#contactForm_popup').submit(function () {
+        yaCounter56138671.reachGoal('form-feedback-popup');
+    });
 })(jQuery); // End of use strict
