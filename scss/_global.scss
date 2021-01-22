@@ -83,6 +83,23 @@ section {
     font-style: normal;
     letter-spacing: -.021em;
   }
+  h1.inner-heroTitle {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: #fff;
+      left: 50%;
+      right: auto;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 35px;
+    }
+  }
   h2.wt-section-title {
     position: relative;
     font-size: 46px;
@@ -287,6 +304,9 @@ img::-moz-selection {
   }
   section h1.wt-section-heroTitle {
     font-size: 40px;
+  }
+  section h1.inner-heroTitle {
+    font-size: 36px;
   }
   section h2.wt-section-title {
     font-size: 26px;

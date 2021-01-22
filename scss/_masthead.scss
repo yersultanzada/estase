@@ -8,6 +8,10 @@ section#masthead {
   .wt-background-headerOverlay {
     background: rgba(60, 80, 111, 0.56);
   }
+  .wt-background-stroyImg {
+    background: url(../img/inner/inner-bg.jpg) no-repeat 50% 30% / cover , #3c506f;
+    filter: saturate(200%);
+  }
   .wt-block-intro {
     padding-top: 50px;
     padding-bottom: 50px;

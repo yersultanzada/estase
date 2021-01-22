@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v5.0.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
@@ -96,6 +96,25 @@ section h1.wt-section-heroTitle {
   text-decoration: none;
   font-style: normal;
   letter-spacing: -.021em;
+}
+
+section h1.inner-heroTitle {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+section h1.inner-heroTitle:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 35px;
 }
 
 section h2.wt-section-title {
@@ -316,6 +335,9 @@ img::-moz-selection {
   section h1.wt-section-heroTitle {
     font-size: 40px;
   }
+  section h1.inner-heroTitle {
+    font-size: 36px;
+  }
   section h2.wt-section-title {
     font-size: 26px;
   }
@@ -516,6 +538,12 @@ section#masthead .wt-background-headerImg {
 
 section#masthead .wt-background-headerOverlay {
   background: rgba(60, 80, 111, 0.56);
+}
+
+section#masthead .wt-background-stroyImg {
+  background: url(../img/inner/inner-bg.jpg) no-repeat 50% 30%/cover, #3c506f;
+  -webkit-filter: saturate(200%);
+  filter: saturate(200%);
 }
 
 section#masthead .wt-block-intro {
@@ -1410,6 +1438,7 @@ section#services .card .card-body .card-title {
   #team .item.slick-slide.slick-active {
     -webkit-transform: scale(0.8) translate(150px);
     transform: scale(0.8) translate(150px);
+    outline: none;
   }
   #team .item.slick-slide.slick-center {
     -webkit-transform: scale(1);
