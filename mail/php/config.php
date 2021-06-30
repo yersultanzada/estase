@@ -15,21 +15,21 @@
 	// *** SMTP *** //
 
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
-		const HOST = 'ssl://smtp.yandex.ru';
-		const LOGIN = 'webtech19studio@yandex.kz';
-		const PASS = 'web_tech2019';
+		const HOST = 'smtp.gmail.com';
+		const LOGIN = 'webtech19studio@gmail.com';
+		const PASS = 'web_tech2121';
 		const PORT = '465';
 
 	// *** /SMTP *** //
 
   // Почта с которой будет приходить письмо
-	const SENDER = 'webtech19studio@yandex.kz';
+	const SENDER = 'webtech19studio@gmail.com';
 	
 	// Почта на которую будет приходить письмо
 	const CATCHER = 'estase.almaty@yandex.kz';
 	
 	// Тема письма
-	const SUBJECT = 'Заявка с сайта';
+	const SUBJECT = 'Заявка с сайта Estase.kz';
 	
 	// Кодировка
   const CHARSET = 'UTF-8';
